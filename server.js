@@ -11,8 +11,12 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: ["https://snipster.onrender.com", "https://manish9737.github.io/snipster/", "http://localhost:1220"],
-  methods: "GET,POST,PUT,DELETE", 
+  origin: [
+    "https://snipster.onrender.com",
+    "https://manish9737.github.io/snipster",
+    "http://localhost:1220"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"], // Ensure allowed methods are included
   credentials: true,
 };
 
