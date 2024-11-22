@@ -45,8 +45,8 @@ Snipster is a Node.js application that helps you generate short, memorable URLs 
 
 ### Database Connection:
 
-    - Create a .env file in the project root.
-    - Add the following environment variable, replacing <your_mongodb_uri> with your actual MongoDB connection URI:
+- Create a .env file in the project root.
+- Add the following environment variable, replacing <your_mongodb_uri> with your actual MongoDB connection URI:
 
     ```bash
     MONGODB_URI=<your_mongodb_uri>
@@ -54,7 +54,8 @@ Snipster is a Node.js application that helps you generate short, memorable URLs 
 
 ### Optional: Custom Short URL Prefix
 
-    - If you want to customize the short URL prefix (e.g., yourdomain.com/s/ instead of the default /s/), modify the baseUrl property in server.js:
+- If you want to customize the short URL prefix (e.g., yourdomain.com/s/ instead of the default /s/), modify the baseUrl property in server.js:
+
     ```bash
     const baseUrl = process.env.BASE_URL || '/s/'; // Default: '/s/'
     ```
