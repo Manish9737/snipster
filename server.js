@@ -14,6 +14,7 @@ const corsOptions = {
   origin: [
     "https://snipster.onrender.com",
     "https://manish9737.github.io/snipster",
+    "https://manish9737.github.io",
     "http://localhost:1220"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"], // Ensure allowed methods are included
