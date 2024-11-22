@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snipster - URL Shortener</title>
+    <!-- Bootstrap CSS for responsive design and styling -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts for better typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container py-5">
+      <!-- Header Section -->
+      <header class="text-center mb-5">
+        <h1 class="display-4 text-primary font-weight-bold">
+          Welcome to Snipster
+        </h1>
+        <p class="lead text-muted">
+          Your ultimate solution for shortening and managing URLs
+        </p>
+      </header>
+
+      <!-- URL Shortener Form Section (Inside a Card) -->
+      <section id="shortener" class="mb-5">
+        <div class="card shadow-sm" style="background-color: #fff;">
+          <div class="card-body">
+            <h2 class="text-primary card-title text-center mb-4">
+              Shorten Your URL
+            </h2>
+            <form id="shortenForm" class="d-flex flex-column align-items-stretch align-items-md-center">
+              <input
+                type="url"
+                id="originalUrl"
+                class="form-control form-control-lg shadow-sm mb-3 "
+                placeholder="Enter your URL here"
+                required
+              />
+              <button type="submit" class="btn btn-primary btn-lg shadow-sm">
+                <i class="fas fa-link"></i> Shorten URL
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Display Shortened URL Inside the Same Card -->
+      <section id="shortenedUrl" class="hidden mb-5 text-center">
+        <div class="card shadow-sm" style="background-color: #fff;">
+          <div class="card-body">
+            <h4 class="text-success">Your shortened URL:</h4>
+            <a
+              id="shortUrl"
+              href="#"
+              target="_blank"
+              class="text-decoration-none h5 text-primary"
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Analytics Section -->
+      <section id="analytics" class="hidden mb-5 text-center">
+        <div class="card shadow-sm" style="background-color: #fff;">
+          <div class="card-body">
+            <h2 class="text-primary">Link Analytics</h2>
+            <p id="clickCount" class="lead small"></p>
+            <p id="originalLink" class="lead small"></p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="text-center mt-5 bg-dark text-white py-4">
+      <p>Made with ❤️ by Manishkumar Kumavat</p>
+      <p>All Rights Reserved 2024</p>
+    </footer>
+
+    <!-- Bootstrap JS for responsive behavior -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

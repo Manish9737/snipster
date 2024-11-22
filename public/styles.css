@@ -1,0 +1,110 @@
+/* General Body and Background Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Section */
+header h1 {
+    font-size: 3.5rem;
+    color: #007bff;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+header p {
+    font-size: 1.3rem;
+    color: #6c757d;
+    font-weight: 400;
+}
+
+/* Main Form Section (Inside Card) */
+#shortener .card {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#shortener input {
+    max-width: 600px;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+}
+
+#shortener button {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#shortener button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Display Shortened URL */
+#shortenedUrl {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#shortenedUrl a {
+    font-size: 1.4rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Section Cards (How to Use, Why Use, Why Choose) */
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #007bff;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: #fff;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+
+    #shortener input, #shortener button {
+        width: 100%;
+    }
+
+    
+}
