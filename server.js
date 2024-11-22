@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const urlRoutes = require("./routes/urlRoutes");
 const path = require('path');
+var logger = require("morgan");
 const { redirectToOriginalUrl } = require("./controllers/urlController");
 
 dotenv.config();
@@ -12,6 +13,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(logger("dev"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 mongoose
   .connect(process.env.MONGO_URI, {

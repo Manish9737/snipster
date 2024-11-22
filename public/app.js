@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:1220/api/url';
+const API_BASE_URL = 'https://manish9737.github.io/snipster/api/url';
 
 // DOM Elements
 const shortenForm = document.getElementById('shortenForm');
