@@ -10,7 +10,13 @@ const { redirectToOriginalUrl } = require("./controllers/urlController");
 dotenv.config();
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+  origin: ["https://snipster.onrender.com", "https://manish9737.github.io/snipster/", "http://localhost:1220"],
+  methods: "GET,POST,PUT,DELETE", 
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(logger("dev"));
