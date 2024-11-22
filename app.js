@@ -26,8 +26,8 @@ shortenForm.addEventListener('submit', async (e) => {
 
     if (response.ok) {
       // Display Shortened URL
-      shortUrlLink.href = `${window.location.origin}/${data.shortCode}`;
-      shortUrlLink.textContent = `${window.location.origin}/${data.shortCode}`;
+      shortUrlLink.href = `${API_BASE_URL}/${data.shortCode}`;
+      shortUrlLink.textContent = `${API_BASE_URL}/${data.shortCode}`;
       shortUrlSection.classList.remove('hidden');
 
       // Reset Form
