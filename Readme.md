@@ -87,3 +87,7 @@ npm start
 ### License
 
 - Snipster is released under the MIT License. See LICENSE.txt for details.
+
+## Demo
+
+- Link: https://manish9737.github.io/snipster/
