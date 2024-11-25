@@ -1,4 +1,5 @@
 const API_BASE_URL = 'https://snipster.onrender.com/api/url';
+const URL_BASE = 'https://snipster.onrender.com';
 
 // DOM Elements
 const shortenForm = document.getElementById('shortenForm');
@@ -26,8 +27,8 @@ shortenForm.addEventListener('submit', async (e) => {
 
     if (response.ok) {
       // Display Shortened URL
-      shortUrlLink.href = `${API_BASE_URL}/${data.shortCode}`;
-      shortUrlLink.textContent = `${API_BASE_URL}/${data.shortCode}`;
+      shortUrlLink.href = `${URL_BASE}/${data.shortCode}`;
+      shortUrlLink.textContent = `${URL_BASE}/${data.shortCode}`;
       shortUrlSection.classList.remove('hidden');
 
       // Reset Form
